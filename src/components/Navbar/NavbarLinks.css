@@ -1,0 +1,13 @@
+.navbar__links {
+  padding-top: 5px;
+}
+
+.navbar__links a:not(:last-child) {
+  margin-right: 2.2rem;
+}
+
+.navbar__links img {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+}
