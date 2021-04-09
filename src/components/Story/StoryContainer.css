@@ -1,0 +1,17 @@
+.story-container {
+  width: 61.4rem;
+  height: 11.8rem;
+  background-color:#ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+
+.story-container ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  list-style-type: none;
+  user-select: none;
+  overflow-y: auto;
+}
