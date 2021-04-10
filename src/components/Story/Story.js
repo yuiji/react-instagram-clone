@@ -2,13 +2,12 @@ import './Story.css'
 import avatar from '../../assets/images/avatar.jpg'
 
 const Story = (props) => {
-
   return (
     <li className="story">
-      <div className="story__image">
-        <img src={props.img ? props.img : avatar} alt="" />
+      <div className={props.story.newStory ? "story__image story__image--new" : "story__image"}>
+        <img src={props.story.img ? props.story.img : avatar} alt="" />
       </div>
-      <span>{props.name}</span>
+      <span>{props.story.name}</span>
     </li>
   )
 }

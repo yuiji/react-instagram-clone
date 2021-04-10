@@ -20,12 +20,17 @@ img {
 }
 
 .story__image {
-  height: 5.6rem;
-  width: 5.6rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
   border: 1px solid#dbdbdb;
   padding: 1px;
   margin-bottom: 0.5rem;
+}
+
+.story__image--new {
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
 
 .story__image img {
