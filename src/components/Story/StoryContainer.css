@@ -12,6 +12,5 @@
   justify-content: flex-start;
   flex-direction: row;
   list-style-type: none;
-  user-select: none;
-  overflow-y: auto;
+
 }
