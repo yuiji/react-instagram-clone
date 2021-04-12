@@ -12,7 +12,6 @@ import { ReactComponent as LikeFillSvg } from '../../assets/icons/like-fill.svg'
 
 const NavbarLinks = () => {
   const location = useLocation()
-  console.log(location)
   return (
     <div className="navbar__links">
       <Link to="/">

@@ -11,7 +11,7 @@ const SearchBar = () => {
   }
   return (
     <div className="navbar__search">
-      <i class={inputStyle ? "fas fa-search" : "fas fa-search  input__icon"}></i>
+      <i className={inputStyle ? "fas fa-search" : "fas fa-search  input__icon"}></i>
       <input 
       onFocus={onFocusHandler} onBlur={onFocusOutHandler} 
       className={inputStyle ? "search__input--focus" : "search__input"} 
