@@ -1,4 +1,4 @@
-import './Story.css'
+import '../../styles/Story.css'
 import avatar from '../../assets/images/avatar.jpg'
 
 const Story = (props) => {

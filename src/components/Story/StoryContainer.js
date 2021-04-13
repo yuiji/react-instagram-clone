@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import HorizontalScroll from 'react-scroll-horizontal'
 import Story from './Story'
-import './StoryContainer.css'
+import '../../styles/StoryContainer.css'
 
 const StoryBox = () => {
 

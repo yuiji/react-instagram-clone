@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import './NavbarLinks.css'
+import '../../styles/NavbarLinks.css'
 import avatar from '../../assets/images/avatar.jpg'
 import { ReactComponent as HomeSvg } from '../../assets/icons/home.svg'
 import { ReactComponent as HomeFillSvg } from '../../assets/icons/home-fill.svg'

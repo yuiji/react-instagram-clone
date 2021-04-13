@@ -2,7 +2,7 @@ import React from 'react'
 import NavbarLinks from './NavbarLinks.js'
 import SearchBar from './SearchBar.js'
 
-import './Navbar.css'
+import '../../styles/Navbar.css'
 import logo from '../../assets/images/instagram-logo.png'
 
 const Navbar = () => {

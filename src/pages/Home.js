@@ -1,5 +1,5 @@
 import StoryContainer from '../components/Story/StoryContainer'
-import './Home.css'
+import '../styles/Home.css'
 
 const Home = () => {
   
