@@ -5,3 +5,18 @@
   border: 1px solid #dbdbdb;
   margin: 2.5rem 0;
 }
+
+
+
+@media screen and (max-width: 631px) {
+  .post {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .post {
+    border: none;
+    margin: 0;
+  }
+}

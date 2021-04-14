@@ -17,4 +17,14 @@
   .home {
     width: 100%;
   }
+
+  .home__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .home {
+    padding-top: 5.3rem;
+  }
 }
