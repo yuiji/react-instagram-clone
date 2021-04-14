@@ -1,5 +1,5 @@
 .navbar__links {
-  padding-top: 5px;
+  padding-top: .5rem;
 }
 
 .navbar__links a:not(:last-child) {

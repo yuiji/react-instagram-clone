@@ -14,7 +14,7 @@ img {
 
 .story span {
   color: #8e8e8e;
-  font-size: 14px;
+  font-size: 1.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }

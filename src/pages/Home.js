@@ -3,13 +3,15 @@ import StoryContainer from '../components/Story/StoryContainer'
 import '../styles/Home.css'
 
 const Home = () => {
-  
+
   return (
-    <div className="home__container">
-      <StoryContainer />
+    <div className="home">
+      <div className="home__container">
+        <StoryContainer />
+      </div>
       <Sidebar />
     </div>
-    )
+  )
 }
 
 export default Home

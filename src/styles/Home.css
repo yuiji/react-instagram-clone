@@ -1,8 +1,21 @@
-.home__container {
+.home {
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 93.5rem;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 8.2rem;
+}
+
+.home__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 999px) {
+  .home {
+    padding-top: 0.1rem;
+    width: 100%;
+  }
 }

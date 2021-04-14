@@ -16,7 +16,7 @@ const SearchBar = () => {
       onFocus={onFocusHandler} onBlur={onFocusOutHandler} 
       className={inputStyle ? "search__input--focus" : "search__input"} 
       type="text" 
-      placeholder="Ara" />
+      placeholder="Search" />
       {inputStyle ? <button onClick={onFocusOutHandler}><i class="fas fa-times-circle"></i></button> : null}  
     </div>
   )

@@ -39,7 +39,7 @@
 .input__icon {
   position: relative;
   left: 50%;
-  transform: translateX(-150%);
+  transform: translateX(-210%);
   font-size: 15px;
 }
 
