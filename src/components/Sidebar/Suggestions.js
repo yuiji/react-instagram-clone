@@ -11,19 +11,19 @@ const Suggestions = () => {
       <Profile
       type="suggestion"
       username="yalperg"
-      name="Yunus Alper Göl" />
+       />
       <Profile
       type="suggestion"
       username="yalperg"
-      name="Yunus Alper Göl" />
+       />
       <Profile
       type="suggestion"
       username="yalperg"
-      name="Yunus Alper Göl" />
+       />
       <Profile
       type="suggestion"
       username="yalperg"
-      name="Yunus Alper Göl" />
+      />
     </div>
   )
 }

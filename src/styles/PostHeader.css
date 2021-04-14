@@ -1,0 +1,36 @@
+.post__header {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.post__header__image {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.post__header__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.post__header__username {
+  flex-grow: 2;
+  margin-left: 1.1rem;
+}
+
+.post__header__username a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;  
+}
+
+.post__header svg {
+  cursor: pointer;
+}
