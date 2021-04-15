@@ -3,3 +3,9 @@
   height: 24.1rem;
   background-color: #ffffff;
 }
+
+@media screen and (max-width: 631px) {
+  .post__footer {
+    width: 100%;
+  }
+}

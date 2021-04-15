@@ -11,3 +11,9 @@
 .post__menu__like__section svg:not(:last-child){
   margin-right: 1.6rem;
 }
+
+@media screen and (max-width: 631px) {
+  .post__menu {
+    width: 100%;
+  }
+}
