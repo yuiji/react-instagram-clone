@@ -1,0 +1,13 @@
+.post__menu {
+  margin-top: .4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 61.4rem;
+  height: 4rem;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+}
+
+.post__menu__like__section svg:not(:last-child){
+  margin-right: 1.6rem;
+}
