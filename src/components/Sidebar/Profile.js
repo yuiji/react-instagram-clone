@@ -5,7 +5,7 @@ const Profile = (props) => {
   return (
     <div className={props.type === 'suggestion' ? "profile profile--small" : "profile"}>
       <div className={props.type === 'suggestion' ? "profile__image profile__image--small" : "profile__image"}>
-        <img src={props.avatar || avatar} alt=""/>
+        <img src={props.imageUrl || avatar} alt=""/>
       </div>
       <div className="profile__name">
         <a href="/">{props.username}</a>
