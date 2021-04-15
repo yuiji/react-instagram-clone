@@ -1,14 +1,18 @@
 import PostHeader from './PostHeader'
 import PostFooter from './PostFooter'
 import '../../styles/Post.css'
-import post from '../../assets/images/post.jpg'
 
 const Post = (props) => {
+  console.log(props.post.postImg)
   return (
     <div className="post">
-      <PostHeader />
-      <img src={props.img || post} alt="" />
-      <PostFooter />
+      <PostHeader 
+      name={props.post.name}
+      userImg={props.post.userImg} />
+      <img src={props.post.postImg} alt="" />
+      <PostFooter
+      likes={props.post.likes}
+      comments={props.post.comments} />
     </div>
   )
 }
