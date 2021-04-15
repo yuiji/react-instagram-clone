@@ -1,0 +1,20 @@
+.comment__container {
+  font-size: 1.4rem;
+  padding: 0 1.6rem;
+  margin: .3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comment__container__name {
+  font-weight: 600;
+  color: #262626;
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 631px) {
+  .comment__container {
+    width: 100%;
+  }
+}

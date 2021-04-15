@@ -1,7 +1,13 @@
 .post__footer {
-  width: 61.4rem;
-  height: 24.1rem;
+  width: 61.2rem;
   background-color: #ffffff;
+}
+
+.post__footer span {
+  padding: 0 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
 }
 
 @media screen and (max-width: 631px) {

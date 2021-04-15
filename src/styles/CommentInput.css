@@ -1,0 +1,35 @@
+.comment-input__container {
+  border-top: 1px solid #dbdbdb;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 61.4rem;
+  height: 5.6rem;
+  margin-top: 3rem;
+}
+
+.comment-input__container input {
+  border: none;
+  outline: none;
+  flex-grow: 2;
+}
+
+.comment-input__container svg {
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+
+.comment-input__container button {
+  all: unset;
+  color: #0095f6;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 631px) {
+  .comment-input__container {
+    width: 100%;
+  }
+}
