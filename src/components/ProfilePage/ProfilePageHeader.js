@@ -1,9 +1,9 @@
-import '../../styles/ProfilePageMenu.css'
+import '../../styles/ProfilePageHeader.css'
 import avatar from '../../assets/images/avatar.jpg'
 
-const ProfilePageMenu = () => {
+const ProfilePageHeader = () => {
   return (
-    <div className="profile-page__menu">
+    <div className="profile-page__header">
       <img src={avatar} alt="" />
       <div className="menu__texts">
         <div className="menu__username">
@@ -25,4 +25,4 @@ const ProfilePageMenu = () => {
 }
 
 
-export default ProfilePageMenu
+export default ProfilePageHeader

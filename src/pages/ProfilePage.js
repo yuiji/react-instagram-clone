@@ -1,10 +1,14 @@
 import '../styles/ProfilePage.css'
-import ProfilePageMenu from '../components/ProfilePage/ProfilePageMenu'
+import ProfilePageHeader from '../components/ProfilePage/ProfilePageHeader'
+import Menu from '../components/ProfilePage/Menu'
+import ProfilePosts from '../components/ProfilePage/ProfilePosts'
 
 const ProfilePage = () => {
   return (
     <div className="profile-page">
-      <ProfilePageMenu />
+      <ProfilePageHeader />
+      <Menu />
+      <ProfilePosts />
     </div>
   )
 }

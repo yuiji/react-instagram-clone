@@ -1,0 +1,24 @@
+.menu {
+  width: 93.5rem;
+  height: 5.3rem;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  all: unset;
+  color: #262626;
+  font-size: 1.2rem;
+  cursor: pointer;
+  letter-spacing: .1rem;
+  list-style: 1.8rem;
+  height: 5.3rem;
+  
+}
+
+.active {
+  border-top: 1px solid #262626;
+}
