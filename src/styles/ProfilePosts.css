@@ -6,3 +6,16 @@
   flex-wrap: wrap;
   width: 94rem;
 }
+
+
+@media screen and (max-width: 999px) {
+  .profile-posts  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .post-img {
+    justify-content: center;
+  }
+}

@@ -3,3 +3,25 @@
   height: 28.5rem;
   margin-bottom: 3.5rem;
 }
+
+@media screen and (max-width: 999px) {
+  .post-img {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .post-img {
+    width: 50%;
+    height: 50%;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .post-img {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+  }
+}

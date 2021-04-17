@@ -76,3 +76,26 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+
+
+@media screen and (max-width: 999px) {
+  .profile-page__header {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .profile-page__header {
+    width: 100%;
+    padding: 0 .5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .profile-page__header img {
+    height: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+  }
+}
