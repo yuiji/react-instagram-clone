@@ -15,8 +15,9 @@
   cursor: pointer;
   letter-spacing: .1rem;
   list-style: 1.8rem;
-  height: 5.3rem;
-  
+  /* height: 5.3rem; */
+  margin-bottom: 2.7rem;
+  line-height: 2.7rem;
 }
 
 .active {
