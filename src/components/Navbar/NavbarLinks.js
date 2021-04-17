@@ -8,7 +8,7 @@ import { ReactComponent as MessangerFillSvg } from '../../assets/icons/messanger
 import { ReactComponent as ExploreSvg } from '../../assets/icons/explore.svg'
 import { ReactComponent as ExploreFillSvg } from '../../assets/icons/explore-fill.svg'
 import { ReactComponent as LikeSvg } from '../../assets/icons/like.svg'
-import { ReactComponent as LikeFillSvg } from '../../assets/icons/like-fill.svg'
+import { ReactComponent as NavbarLikeFillSvg } from '../../assets/icons/navbar-like-fill.svg'
 
 const NavbarLinks = () => {
   const location = useLocation()
@@ -24,7 +24,7 @@ const NavbarLinks = () => {
         {location.pathname === '/explore' ? <ExploreFillSvg /> : <ExploreSvg />}
       </Link>
       <Link to="/like">
-        {location.pathname === '/like' ? <LikeFillSvg /> : <LikeSvg />}        
+        {location.pathname === '/like' ? <NavbarLikeFillSvg /> : <LikeSvg />}        
       </Link>
       <Link to="/profile">
         <img src={avatar} style={location.pathname === '/profile' ? {border: '1px solid black'}: null} alt="" />

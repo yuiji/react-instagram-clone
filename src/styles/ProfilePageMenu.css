@@ -1,0 +1,79 @@
+.profile-page__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 93.5rem;
+  height: 15rem;
+  margin-bottom: 4.4rem;
+  padding: 0 7.1rem;
+}
+
+.profile-page__menu img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin-right: 7.1rem;
+}
+
+.menu__texts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.menu__username {
+  color: #262626;
+  margin-bottom: 2rem;
+}
+
+.menu__username span {
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-right: 2rem;
+}
+
+.menu__username button {
+  outline: none;
+  background: none;
+  padding: .5rem .9rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+
+.menu__follow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.menu__follow span {
+  font-weight: 600;
+}
+
+.menu__follow p:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.menu__name {
+  display: flex;
+  flex-direction: column;
+  color: #262626;
+}
+
+.menu__name span {
+  letter-spacing: .1rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: .3rem;
+}
+
+.menu__name p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}

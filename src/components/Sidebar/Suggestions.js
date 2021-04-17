@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Profile from './Profile'
 import '../../styles/Suggestions.css'
+import { v4 as uuidv4 } from 'uuid';
 
 const Suggestions = () => {
 
@@ -9,18 +10,23 @@ const Suggestions = () => {
   }
 
   const [suggestions] = useState([{
+    id :uuidv4(),
     username: 'yalperg',
     imageUrl: getRandomImage()
   }, {
+    id :uuidv4(),
     username: 'yalperg',
     imageUrl: getRandomImage()
   }, {
+    id :uuidv4(),
     username: 'yalperg',
     imageUrl: getRandomImage()
   }, {
+    id :uuidv4(),
     username: 'yalperg',
     imageUrl: getRandomImage()
   }, {
+    id :uuidv4(),
     username: 'yalperg',
     imageUrl: getRandomImage()
   }])
@@ -34,6 +40,7 @@ const Suggestions = () => {
       {suggestions.map(suggestion => {
         return (
           <Profile
+            key={suggestion.id}
             type="suggestion"
             imageUrl={suggestion.imageUrl}
             username={suggestion.username}

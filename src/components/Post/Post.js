@@ -3,7 +3,6 @@ import PostFooter from './PostFooter'
 import '../../styles/Post.css'
 
 const Post = (props) => {
-  console.log(props.post.postImg)
   return (
     <div className="post">
       <PostHeader 

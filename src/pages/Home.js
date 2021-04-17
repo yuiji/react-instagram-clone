@@ -8,7 +8,7 @@ import { PostContext } from '../contexts/PostContext'
 
 const Home = () => {
   const { posts } = useContext(PostContext)
-  console.log(posts)
+
   return (
     <div className="home">
       <div className="home__container">
