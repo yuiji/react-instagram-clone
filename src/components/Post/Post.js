@@ -10,6 +10,7 @@ const Post = (props) => {
       userImg={props.post.userImg} />
       <img src={props.post.postImg} alt="" />
       <PostFooter
+      id={props.post.id}
       likes={props.post.likes}
       comments={props.post.comments} />
     </div>

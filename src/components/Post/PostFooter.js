@@ -4,10 +4,10 @@ import CommentInput from './CommentInput'
 import '../../styles/PostFooter.css'
 
 const PostFooter = (props) => {
-  console.log(props.comments)
+
   return (
     <div className="post__footer">
-      <PostMenu />
+      <PostMenu id={props.id} />
       <span>{props.likes} likes</span>
       {props.comments.map(comment => {
         return (

@@ -7,29 +7,7 @@ class PostContextProvider extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      posts: [{
-        id: uuidv4(),
-        name: 'yalperg',
-        likes: 150,
-        userImg: this.getRandomImage(),
-        postImg: 'https://source.unsplash.com/random',
-        comments: [
-          { 
-            id: uuidv4(),
-            commentName: 'yalperg',
-            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
-          },
-          { 
-            id: uuidv4(),
-            commentName: 'yalperg',
-            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
-          },
-          { 
-            id: uuidv4(),
-            commentName: 'yalperg',
-            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
-          }]
-      },
+      posts: [
       { 
         id: uuidv4(),
         name: 'yalperg',
@@ -52,8 +30,47 @@ class PostContextProvider extends Component {
             commentName: 'yalperg',
             comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
           }]
-      }]
+      },
+      { 
+        id: uuidv4(),
+        name: 'yuiji',
+        likes: 27,
+        userImg: this.getRandomImage(),
+        postImg: 'https://source.unsplash.com/random',
+        comments: [
+          { 
+            id: uuidv4(),
+            commentName: 'yalperg',
+            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
+          }]
+      },
+      { 
+        id: uuidv4(),
+        name: 'yuiji',
+        likes: 350,
+        userImg: this.getRandomImage(),
+        postImg: 'https://source.unsplash.com/random',
+        comments: [
+          { 
+            id: uuidv4(),
+            commentName: 'yalperg',
+            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium.'
+          }]
+      },
+    ]
     }
+  }
+
+  changeLikeHandler = (id, type) => {
+    const idx = this.state.posts.findIndex(post => post.id === id)
+    const newPosts = [...this.state.posts]
+
+    if(type === 'like') newPosts[idx].likes++
+    if(type === 'unlike') newPosts[idx].likes--
+
+    this.setState({
+      posts: newPosts
+    })
   }
 
   getRandomImage = () => {
@@ -62,7 +79,7 @@ class PostContextProvider extends Component {
 
   render() {
     return (
-      <PostContext.Provider value={{ ...this.state }}>
+      <PostContext.Provider value={{ ...this.state, changeLike: this.changeLikeHandler}}>
         {this.props.children}
       </PostContext.Provider>
     )
