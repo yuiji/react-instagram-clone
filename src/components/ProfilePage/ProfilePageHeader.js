@@ -1,23 +1,28 @@
+import { useContext } from 'react'
+import { UserContext } from '../../contexts/UserContext'
+
 import '../../styles/ProfilePageHeader.css'
 import avatar from '../../assets/images/avatar.jpg'
 
 const ProfilePageHeader = () => {
+  const { user } = useContext(UserContext)
+
   return (
     <div className="profile-page__header">
       <img src={avatar} alt="" />
       <div className="menu__texts">
         <div className="menu__username">
-          <span>yalperg</span>
+          <span>{user.username}</span>
           <button>Edit Profile</button>
         </div>
         <div className="menu__follow">
-          <p><span>0 </span>posts</p>
-          <p> <span>76 </span>followers</p>
-          <p><span>77 </span>following</p>
+          <p><span>{user.posts.length} </span>posts</p>
+          <p> <span>{user.followers.length} </span>followers</p>
+          <p><span>{user.following.length} </span>following</p>
         </div>
         <div className="menu__name">
-          <span>Yunus Alper Göl</span>
-          <p>DEU | Computer Science</p>
+          <span>{user.name}</span>
+          <p>{user.bio}</p>
         </div>
       </div>
     </div>
