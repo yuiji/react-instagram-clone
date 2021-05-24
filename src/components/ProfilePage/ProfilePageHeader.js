@@ -2,14 +2,13 @@ import { useContext } from 'react'
 import { UserContext } from '../../contexts/UserContext'
 
 import '../../styles/ProfilePageHeader.css'
-import avatar from '../../assets/images/avatar.jpg'
 
 const ProfilePageHeader = () => {
   const { user } = useContext(UserContext)
 
   return (
     <div className="profile-page__header">
-      <img src={avatar} alt="" />
+      <img src={user.photo} alt="" />
       <div className="menu__texts">
         <div className="menu__username">
           <span>{user.username}</span>

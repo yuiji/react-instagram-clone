@@ -1,5 +1,6 @@
 import React, { Component, createContext } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import avatar from '../assets/images/avatar.jpg'
 
 export const UserContext = createContext()
 
@@ -12,6 +13,7 @@ class UserContextProvider extends Component {
         username: 'yalperg',
         name: 'Yunus Alper Göl',
         bio: 'DEU | Computer Science',
+        photo: avatar,
         followers: [1, 2, 3, 4, 5],
         following: [1, 2, 3, 4],
         posts: [
