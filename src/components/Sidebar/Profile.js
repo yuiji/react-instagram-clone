@@ -1,14 +1,13 @@
-import avatar from '../../assets/images/avatar.jpg'
 import '../../styles/Profile.css'
 
 const Profile = (props) => {
   return (
     <div className={props.type === 'suggestion' ? "profile profile--small" : "profile"}>
       <div className={props.type === 'suggestion' ? "profile__image profile__image--small" : "profile__image"}>
-        <img src={props.imageUrl || avatar} alt=""/>
+        <img src={props.avatar} alt=""/>
       </div>
       <div className="profile__name">
-        <a href="/">{props.username}</a>
+        <a href="/profile">{props.username}</a>
         {props.type === "suggestion" ? null : <span>{props.name}</span>}
       </div>
       <button className="profile__switch-button">

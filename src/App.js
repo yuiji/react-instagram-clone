@@ -1,10 +1,11 @@
 import { Fragment } from 'react'
-import PostContextProvider from './contexts/PostContext'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import ProfilePage from './pages/ProfilePage'
+import PostContextProvider from './contexts/PostContext'
 import UserContextProvider from './contexts/UserContext'
+import SuggestionsContextProvider from './contexts/SuggestionsContext'
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
             <Navbar />
             <Switch>
               <Route path='/' exact>
-                <Home />
+                <SuggestionsContextProvider>
+                  <Home />
+                </SuggestionsContextProvider>
               </Route>
               <Route path='/profile' exact>
                 <ProfilePage />

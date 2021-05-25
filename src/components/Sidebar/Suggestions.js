@@ -1,35 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import Profile from './Profile'
 import '../../styles/Suggestions.css'
-import { v4 as uuidv4 } from 'uuid';
+import { SuggestionsContext } from '../../contexts/SuggestionsContext'
 
 const Suggestions = () => {
-
-  const getRandomImage = () => {
-    return `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 70)}`
-  }
-
-  const [suggestions] = useState([{
-    id :uuidv4(),
-    username: 'yalperg',
-    imageUrl: getRandomImage()
-  }, {
-    id :uuidv4(),
-    username: 'yalperg',
-    imageUrl: getRandomImage()
-  }, {
-    id :uuidv4(),
-    username: 'yalperg',
-    imageUrl: getRandomImage()
-  }, {
-    id :uuidv4(),
-    username: 'yalperg',
-    imageUrl: getRandomImage()
-  }, {
-    id :uuidv4(),
-    username: 'yalperg',
-    imageUrl: getRandomImage()
-  }])
+  const { suggestions } = useContext(SuggestionsContext)
 
   return (
     <div className="suggestions">
@@ -42,7 +17,7 @@ const Suggestions = () => {
           <Profile
             key={suggestion.id}
             type="suggestion"
-            imageUrl={suggestion.imageUrl}
+            avatar={suggestion.imageUrl}
             username={suggestion.username}
           />
         )
