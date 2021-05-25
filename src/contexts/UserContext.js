@@ -14,13 +14,9 @@ class UserContextProvider extends Component {
         name: 'Yunus Alper Göl',
         bio: 'DEU | Computer Science',
         photo: avatar,
-        followers: [1, 2, 3, 4, 5],
-        following: [1, 2, 3, 4],
+        followers: ['user-1', 'user-2', 'user-3', 'user-4'],
+        following: ['user-1', 'user-2', 'user-3', 'user-4','user-5', 'user-6'],
         posts: [
-          {
-            id: uuidv4(),
-            imageUrl: 'https://source.unsplash.com/random',
-          },
           {
             id: uuidv4(),
             imageUrl: 'https://source.unsplash.com/random',

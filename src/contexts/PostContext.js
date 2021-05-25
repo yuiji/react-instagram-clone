@@ -82,6 +82,7 @@ class PostContextProvider extends Component {
   }
 
   addCommentHandler = (id, comment) => {
+    if(comment.comment === '') return 
     const idx = this.state.posts.findIndex(post => post.id === id)
     const newPosts = [...this.state.posts]
 
