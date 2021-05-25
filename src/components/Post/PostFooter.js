@@ -3,10 +3,9 @@ import Comment from './Comment'
 import CommentInput from './CommentInput'
 import '../../styles/PostFooter.css'
 
-const PostFooter = (props) => {
-
+const PostFooter = props => {
   return (
-    <div className="post__footer">
+    <div className='post__footer'>
       <PostMenu id={props.id} />
       <span>{props.likes} likes</span>
       {props.comments.map(comment => {
@@ -14,10 +13,11 @@ const PostFooter = (props) => {
           <Comment
             key={comment.id}
             commentName={comment.commentName}
-            comment={comment.comment} />
+            comment={comment.comment}
+          />
         )
       })}
-      <CommentInput />
+      <CommentInput id={props.id} />
     </div>
   )
 }
