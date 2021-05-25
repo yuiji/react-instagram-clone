@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../../styles/Profile.css'
 
 const Profile = (props) => {
@@ -7,7 +8,7 @@ const Profile = (props) => {
         <img src={props.avatar} alt=""/>
       </div>
       <div className="profile__name">
-        <a href="/profile">{props.username}</a>
+        <Link to="/profile">{props.username}</Link>
         {props.type === "suggestion" ? null : <span>{props.name}</span>}
       </div>
       <button className="profile__switch-button">

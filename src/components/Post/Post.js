@@ -7,7 +7,7 @@ const Post = (props) => {
     <div className="post">
       <PostHeader 
       name={props.post.name}
-      userImg={props.post.userImg} />
+      avatar={props.post.userImg} />
       <img src={props.post.postImg} alt="" />
       <PostFooter
       id={props.post.id}
