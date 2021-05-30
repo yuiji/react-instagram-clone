@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.comment-input__container button.disable {
+  color: #88c7f3;
+}
+
 .comment-input__emoji {
   position: absolute;
   top: 60px;

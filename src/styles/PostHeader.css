@@ -31,6 +31,10 @@
   font-weight: 600;  
 }
 
+.post__header__username a:Hover {
+  text-decoration: underline;
+}
+
 .post__header svg {
   cursor: pointer;
 }

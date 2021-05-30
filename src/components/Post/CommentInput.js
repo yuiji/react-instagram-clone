@@ -13,7 +13,7 @@ const CommentInput = ({ id }) => {
 
   const submitHandler = e => {
     e.preventDefault()
-    addComment(id, { name: user.username, comment: comment })
+    addComment(id, { name: user.username, comment: comment.trim() })
     setComment('')
   }
 
@@ -38,7 +38,7 @@ const CommentInput = ({ id }) => {
         value={comment}
         onChange={inputChangeHandler}
       />
-      <button type='submit'>Post</button>
+      <button type='submit' className={!comment ? 'disable': null}>Post</button>
       {openMenu && (
         <div className='comment-input__emoji'>
           <Picker onEmojiClick={onEmojiClick} />
