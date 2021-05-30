@@ -29,6 +29,10 @@ const CommentInput = ({ id }) => {
     setOpenMenu(!openMenu)
   }
 
+  const closeEmojiMenu = () => {
+    openMenu && setOpenMenu(false)
+  }
+
   return (
     <form className='comment-input__container' onSubmit={submitHandler}>
       <EmojiSvg onClick={toggleEmojiMenu} />
@@ -37,6 +41,7 @@ const CommentInput = ({ id }) => {
         placeholder='Add a comment...'
         value={comment}
         onChange={inputChangeHandler}
+        onFocus={closeEmojiMenu}
       />
       <button type='submit' className={!comment ? 'disable': null}>Post</button>
       {openMenu && (
