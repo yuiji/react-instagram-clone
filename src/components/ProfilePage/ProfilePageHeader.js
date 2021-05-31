@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { UserContext } from '../../contexts/UserContext'
+import { useSelector } from 'react-redux'
 
 import '../../styles/ProfilePageHeader.css'
 
 const ProfilePageHeader = () => {
-  const { user } = useContext(UserContext)
+  const { user } = useSelector(state => state.user)
 
   return (
     <div className="profile-page__header">

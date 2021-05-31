@@ -1,13 +1,11 @@
-import { useContext } from 'react'
+import { useSelector } from 'react-redux'
 import Sidebar from '../components/Sidebar/Sidebar'
 import StoryContainer from '../components/Story/StoryContainer'
 import Post from '../components/Post/Post'
 import '../styles/Home.css'
 
-import { PostContext } from '../contexts/PostContext'
-
 const Home = () => {
-  const { posts } = useContext(PostContext)
+  const { posts } = useSelector(state => state.posts)
 
   return (
     <div className="home">

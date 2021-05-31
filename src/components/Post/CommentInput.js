@@ -1,19 +1,24 @@
-import { useState, useContext } from 'react'
+import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { postActions } from '../../store/postSlice'
 import Picker from 'emoji-picker-react'
-import { PostContext } from '../../contexts/PostContext'
-import { UserContext } from '../../contexts/UserContext'
 import { ReactComponent as EmojiSvg } from '../../assets/icons/emoji.svg'
 import '../../styles/CommentInput.css'
 
 const CommentInput = ({ id }) => {
+  const dispatch = useDispatch()
+  const { user } = useSelector(state => state.user)
   const [comment, setComment] = useState('')
   const [openMenu, setOpenMenu] = useState(false)
-  const { addComment } = useContext(PostContext)
-  const { user } = useContext(UserContext)
 
   const submitHandler = e => {
     e.preventDefault()
-    addComment(id, { name: user.username, comment: comment.trim() })
+    dispatch(
+      postActions.addCommentHandler({
+        id,
+        comment: { name: user.username, comment: comment.trim() },
+      })
+    )
     setComment('')
   }
 
@@ -43,7 +48,9 @@ const CommentInput = ({ id }) => {
         onChange={inputChangeHandler}
         onFocus={closeEmojiMenu}
       />
-      <button type='submit' className={!comment ? 'disable': null}>Post</button>
+      <button type='submit' className={!comment ? 'disable' : null}>
+        Post
+      </button>
       {openMenu && (
         <div className='comment-input__emoji'>
           <Picker onEmojiClick={onEmojiClick} />

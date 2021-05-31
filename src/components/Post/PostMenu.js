@@ -1,5 +1,5 @@
-import React, { useState, useContext } from 'react'
-import { PostContext } from '../../contexts/PostContext'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 
 import { ReactComponent as LikeSvg } from '../../assets/icons/like.svg'
 import { ReactComponent as LikeFillSvg } from '../../assets/icons/like-fill.svg'
@@ -9,20 +9,21 @@ import { ReactComponent as SaveSvg } from '../../assets/icons/save.svg'
 import { ReactComponent as SaveFillSvg } from '../../assets/icons/save-fill.svg'
 
 import '../../styles/PostMenu.css'
+import { postActions } from '../../store/postSlice'
 
 const PostMenu = ({ id }) => {
-  const { changeLike } = useContext(PostContext)
+  const dispatch = useDispatch()
   const [like, setLike] = useState(false)
   const [save, setSave] = useState(false)
 
   const likeHandler = () => {
     setLike(true)
-    changeLike(id, 'like')
+    dispatch(postActions.changeLikeHandler({id, type: 'like'}))
   }
 
   const unlikeHandler = () => {
     setLike(false)
-    changeLike(id, 'unlike')
+    dispatch(postActions.changeLikeHandler({id, type: 'unlike'}))
   }
 
   const saveHandler = () => {

@@ -1,10 +1,9 @@
-import React,{ useContext }  from 'react'
+import { useSelector } from 'react-redux'
 import ProfilePost from '../ProfilePage/ProfilePost'
-import { UserContext } from '../../contexts/UserContext'
 import '../../styles/ProfilePosts.css'
 
 const PorfilePosts = () => {
-  const { user } = useContext(UserContext)
+  const { user } = useSelector(state => state.user)
 
   return (
     <div className="profile-posts">

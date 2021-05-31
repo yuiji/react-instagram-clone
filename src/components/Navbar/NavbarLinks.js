@@ -1,6 +1,5 @@
-import { useContext } from 'react'
+import { useSelector } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
-import { UserContext } from '../../contexts/UserContext'
 import { ReactComponent as HomeSvg } from '../../assets/icons/home.svg'
 import { ReactComponent as HomeFillSvg } from '../../assets/icons/home-fill.svg'
 import { ReactComponent as MessangerSvg } from '../../assets/icons/messanger.svg'
@@ -12,7 +11,7 @@ import { ReactComponent as NavbarLikeFillSvg } from '../../assets/icons/navbar-l
 import '../../styles/NavbarLinks.css'
 
 const NavbarLinks = () => {
-  const { user } = useContext(UserContext)
+  const { user } = useSelector(state => state.user)
   const location = useLocation()
 
   return (

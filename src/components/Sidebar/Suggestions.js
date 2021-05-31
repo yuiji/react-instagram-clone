@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import { useSelector } from 'react-redux'
 import Profile from './Profile'
 import '../../styles/Suggestions.css'
-import { SuggestionsContext } from '../../contexts/SuggestionsContext'
 
 const Suggestions = () => {
-  const { suggestions } = useContext(SuggestionsContext)
+  const { suggestions } = useSelector(state => state.suggestions)
 
   return (
-    <div className="suggestions">
-      <div className="suggestions__header">
+    <div className='suggestions'>
+      <div className='suggestions__header'>
         <span>Suggestions For You</span>
         <button>See All</button>
       </div>
@@ -16,7 +15,7 @@ const Suggestions = () => {
         return (
           <Profile
             key={suggestion.id}
-            type="suggestion"
+            type='suggestion'
             avatar={suggestion.imageUrl}
             username={suggestion.username}
           />
